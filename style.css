@@ -420,7 +420,7 @@ header nav ul li a {
 .about-us {
     background-color: #d6d6d6;
     max-width: 3000px; /* Lebar maksimum */
-    margin: auto; /* Pusatkan konten secara horizontal */
+    margin: 40; /* Pusatkan konten secara horizontal */
 }
 
 /* CSS untuk footer */
