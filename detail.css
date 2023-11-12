@@ -1,0 +1,174 @@
+/* CSS untuk animasi perubahan warna pada teks "Welcome" */
+h1 {
+    animation: color-change 5s infinite;
+}
+/* CSS untuk layar besar */
+/* Anda dapat menentukan gaya CSS yang sesuai di sini */
+@media (min-width: 800px) {
+    /* Contoh: */
+    body:not(.small-screen) .header {
+      /* Atur gaya CSS untuk header pada layar besar */
+    }
+  }
+  
+  /* CSS untuk layar kecil */
+  @media (max-width: 600px) {
+    /* Anda dapat menentukan gaya CSS yang sesuai di sini */
+    body.small-screen .header {
+      /* Atur gaya CSS untuk header pada layar kecil */
+    }
+  }
+@keyframes color-change {
+    0% {
+        color:hsl(24, 100%, 50%) ; /* Warna pada awal animasi */
+    }
+    50% {
+        color:whitesmoke ; /* Warna saat tengah animasi */
+    }
+    100% {
+        color: hsl(24, 100%, 50%); /* Warna saat animasi selesai */
+    }
+}
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS untuk teks "Welcome" */
+.text {
+    text-align: center;
+    padding: 20px; /* Sesuaikan dengan kebutuhan Anda */
+}
+
+h1 {
+    font-size: 24px; /* Sesuaikan dengan ukuran font yang diinginkan */
+}
+
+
+/* Tambahkan aturan CSS untuk gambar banner responsif */
+.banner img {
+    width: 500;
+    height: 200px;
+    max-width: 1700px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* CSS untuk Navbar */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Ganti dengan warna latar belakang yang sesuai */
+    z-index: 1000;
+}
+
+.fixed-header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixed-header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.fixed-header li {
+    margin: 0 10px;
+}
+
+.fixed-header a {
+    text-decoration: none;
+    color: #fff; /* Warna teks non-aktif */
+    transition: color 0.3s; /* Efek transisi warna saat hover */
+}
+
+.fixed-header a:hover {
+    color: hsl(24, 100%, 50%); /* Warna teks saat dihover */
+}
+
+.fixed-header a.active {
+    color: #ff5733; /* Warna teks aktif (yang sedang diklik) */
+}
+body {
+    text-align: center;
+}
+.center {
+    display: block;
+    margin: 0 auto;
+}
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Add this CSS for the fixed navigation bar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333; /* Set your desired background color */
+    z-index: 100; /* To ensure it's above other elements */
+}
+/* CSS untuk card produk */
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Lebar maksimum card */
+    margin: 0 auto; /* Pusatkan card secara horizontal */
+    text-align: center;
+}
+
+.card img.center {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Pastikan gambar sesuai lebar card */
+}
+
+.card p {
+    font-size: 18px;
+}
+
+.price {
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+}
+
+.card button {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.card button:hover {
+    background-color: hsl(24, 100%, 50%)
+}
+/* CSS untuk footer */
+footer {
+    background-color: #333; /* Warna latar belakang footer */
+    color: #fff; /* Warna teks footer */
+    text-align: center;
+    padding: 10px 0;
+}
